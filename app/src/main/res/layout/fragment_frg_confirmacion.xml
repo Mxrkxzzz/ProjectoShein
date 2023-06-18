@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.frgConfirmacion">
+
+
+    <Button
+        android:id="@+id/btnSaltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saltar"
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:text="Despues de ingresar y verificar el numero de telefono, puedes inicar sesion directamente con tu numero de telefono"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="280dp"
+        android:layout_marginBottom="60dp"
+        android:text="Recibe newsletter y tips de estilos exclusivos de SHEIN por SMS"
+        android:textColor="@color/gray"
+        android:textSize="12dp"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:hint="Por favor introduce el numero de telefono"
+        android:inputType="number"
+        android:textColor="@color/gray"
+        android:textSize="13dp" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="Codigo de Verificacion"
+        android:inputType="numberPassword"
+        android:textSize="13dp" />
+
+    <Button
+        android:id="@+id/btnMandarLogin"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="ENVIAR"
+        android:layout_marginTop="400dp"
+        android:textStyle="bold"/>
+</FrameLayout>

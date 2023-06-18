@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_principio"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/comprar"/>
+
+    <item
+        android:id="@+id/nav_categoria"
+        android:icon="@drawable/baseline_manage_search_24"
+        android:title="@string/categoria" />
+
+    <item
+        android:id="@+id/nav_nuevo"
+        android:icon="@drawable/baseline_woman_24"
+        android:title="@string/nuevos" />
+    <item
+        android:id="@+id/nav_cesta"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        android:title="@string/cesta" />
+    <item
+        android:id="@+id/nav_yo"
+        android:icon="@drawable/baseline_person_outline_24"
+        android:title="@string/yo" />
+
+</menu>

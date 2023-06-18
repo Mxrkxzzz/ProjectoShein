@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_splash">
+
+    <fragment
+        android:id="@+id/nav_splash"
+        android:name="pe.senati.projectoshein.ui.frgSplash"
+        android:label="fragment_frg_splash"
+        tools:layout="@layout/fragment_frg_splash">
+        <action
+            android:id="@+id/action_nav_splash_to_nav_inicio"
+            app:destination="@id/nav_inicio" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_yo"
+        android:name="pe.senati.projectoshein.ui.frgYo"
+        android:label="fragment_frg_yo"
+        tools:layout="@layout/fragment_frg_yo" >
+        <action
+            android:id="@+id/action_nav_yo_to_nav_login"
+            app:destination="@id/nav_login" />
+        <action
+            android:id="@+id/action_nav_yo_to_nav_registro"
+            app:destination="@id/nav_registro" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_categoria"
+        android:name="pe.senati.projectoshein.ui.frgCategoria"
+        android:label="fragment_frg_categoria"
+        tools:layout="@layout/fragment_frg_categoria" />
+    <fragment
+        android:id="@+id/nav_cesta"
+        android:name="pe.senati.projectoshein.ui.frgCesta"
+        android:label="fragment_frg_cesta"
+        tools:layout="@layout/fragment_frg_cesta" />
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="pe.senati.projectoshein.ui.frgInicio"
+        android:label="fragment_frg_inicio"
+        tools:layout="@layout/fragment_frg_inicio" >
+        <action
+            android:id="@+id/action_nav_inicio_to_nav_principio"
+            app:destination="@id/nav_principio" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="pe.senati.projectoshein.ui.frgLogin"
+        android:label="fragment_frg_login"
+        tools:layout="@layout/fragment_frg_login" >
+        <action
+            android:id="@+id/action_nav_login_to_nav_registro"
+            app:destination="@id/nav_registro" />
+        <action
+            android:id="@+id/action_nav_login_to_frgPassword"
+            app:destination="@id/nav_password" />
+        <action
+            android:id="@+id/action_nav_login_to_nav_yo"
+            app:destination="@id/nav_yo" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_nuevo"
+        android:name="pe.senati.projectoshein.ui.frgNuevo"
+        android:label="fragment_frg_nuevo"
+        tools:layout="@layout/fragment_frg_nuevo" />
+    <fragment
+        android:id="@+id/nav_principio"
+        android:name="pe.senati.projectoshein.ui.frgPrincipio"
+        android:label="fragment_frg_principio"
+        tools:layout="@layout/fragment_frg_principio" >
+        <action
+            android:id="@+id/action_nav_principio_to_nav_categoria"
+            app:destination="@id/nav_categoria" />
+        <action
+            android:id="@+id/action_nav_principio_to_nav_nuevo"
+            app:destination="@id/nav_nuevo" />
+        <action
+            android:id="@+id/action_nav_principio_to_nav_cesta"
+            app:destination="@id/nav_cesta" />
+        <action
+            android:id="@+id/action_nav_principio_to_nav_yo"
+            app:destination="@id/nav_yo" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_registro"
+        android:name="pe.senati.projectoshein.ui.frgRegistro"
+        android:label="fragment_frg_registro"
+        tools:layout="@layout/fragment_frg_registro" >
+        <action
+            android:id="@+id/action_nav_registro_to_nav_login"
+            app:destination="@id/nav_login" />
+        <action
+            android:id="@+id/action_nav_registro_to_frgConfirmacion"
+            app:destination="@id/nav_confirmacion" />
+        <action
+            android:id="@+id/action_nav_registro_to_nav_yo"
+            app:destination="@id/nav_yo" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_confirmacion"
+        android:name="pe.senati.projectoshein.ui.frgConfirmacion"
+        android:label="fragment_frg_confirmacion"
+        tools:layout="@layout/fragment_frg_confirmacion" >
+        <action
+            android:id="@+id/action_frgConfirmacion_to_nav_yo"
+            app:destination="@id/nav_yo" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_password"
+        android:name="pe.senati.projectoshein.ui.frgPassword"
+        android:label="fragment_frg_password"
+        tools:layout="@layout/fragment_frg_password" >
+        <action
+            android:id="@+id/action_nav_password_to_nav_principio"
+            app:destination="@id/nav_principio" />
+    </fragment>
+    <fragment
+        android:id="@+id/frgImagen"
+        android:name="pe.senati.projectoshein.ui.frgImagen"
+        android:label="fragment_frg_imagen"
+        tools:layout="@layout/fragment_frg_imagen" />
+</navigation>

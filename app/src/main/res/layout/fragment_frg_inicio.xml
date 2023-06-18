@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.frgInicio">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="187dp"
+        android:layout_gravity="clip_horizontal"
+        android:src="@drawable/png_mapa" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="127dp"
+        android:text="@string/bienvenida"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:text="@string/incio_publicidad"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/btnNavInicio"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:text="@string/compras"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="350dp"
+        android:textSize="11sp"
+        android:backgroundTint="@color/gray2" />
+</FrameLayout>
