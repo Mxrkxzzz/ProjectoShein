@@ -21,6 +21,7 @@ public class Db extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table Cliente(id integer  primary key autoincrement, Correo text, Password text)");
+        db.execSQL("create table Producto(id integer  primary key autoincrement, Precio text, Detalle text, Color text)");
     }
 
     @Override
